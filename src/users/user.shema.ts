@@ -18,7 +18,7 @@ export class User {
         required: true,
         select: false, 
     })
-    passport!: string
+    password!: string
 }
 
 export const UserSchema = SchemaFactory.createForClass(User)

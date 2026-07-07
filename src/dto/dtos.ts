@@ -7,7 +7,7 @@ export class RegisterDto {
     @IsString()
     @MinLength(6)
     
-    passport!:string
+    password!:string
 }
 
 export class LoginDto { 
