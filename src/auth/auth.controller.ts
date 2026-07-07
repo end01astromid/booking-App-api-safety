@@ -2,6 +2,7 @@ import { Controller } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { RegisterDto, LoginDto} from 'src/dto/dtos';
 import { Get, Post, Body } from '@nestjs/common';
+import { JwtAuthGurad } from '../guards/jwt-auth.guard';
 
 
 @Controller()
