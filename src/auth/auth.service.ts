@@ -34,13 +34,13 @@ export class AuthService {
     async login(dto: LoginDto){
         const {email, password} = dto
 
-        const chekUser = await this.UserModel.findOne({email})
+        const chekUser = await this.UserModel.findOne({email}).select('+password');
         if(!chekUser){
           throw new UnauthorizedException('Неверный email или пароль');
     }
 
      // 2. Сравнение хэша пароля из БД с паролем от клиента
-     const isPasswordValid = bcrypt.compare(password, chekUser.password);
+     const isPasswordValid = await bcrypt.compare(password, chekUser.password);
      if(!isPasswordValid){
         throw new UnauthorizedException('Неверный email или пароль');
      }
