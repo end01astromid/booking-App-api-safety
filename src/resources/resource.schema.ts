@@ -31,3 +31,4 @@ export class Resource {
 
 }
 
+export const ResourceSchema = SchemaFactory.createForClass(Resource);
