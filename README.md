@@ -14,7 +14,7 @@
  * NestJS
  * MongoDB + Mongoose
  * JWT + Passport
- * bcrypt
+ * bcrypt, AuthGuard
  * class-validator / TypeScript
 
 ---
