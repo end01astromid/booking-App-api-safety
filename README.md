@@ -35,7 +35,7 @@
 3. **Создай файл `.env`:**
    ```env
    PORT=3000
-   MONGODB_URI=mongodb://localhost:27017/slotbook
+   MONGODB_URI=mongodb://localhost:27017/mongoo-book
    JWT_SECRET=SECRET_KEY
    ```
 
