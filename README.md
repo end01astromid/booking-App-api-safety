@@ -11,11 +11,11 @@
 6. **Отмена брони** (через смену статуса)
 
 ### Использование технологий
- *NestJS
- *MongoDB + Mongoose
- *JWT + Passport
- *bcrypt
- *class-validator / TypeScript
+ * NestJS
+ * MongoDB + Mongoose
+ * JWT + Passport
+ * bcrypt
+ * class-validator / TypeScript
 
 ---
 
